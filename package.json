@@ -1,0 +1,30 @@
+{
+  "name": "react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.46.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.29.4",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@unocss/preset-attributify": "^0.46.5",
+    "@unocss/transformer-attributify-jsx": "^0.46.5",
+    "@vitejs/plugin-react": "^2.2.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3",
+    "unocss": "^0.46.5",
+    "vite": "^3.2.4"
+  }
+}
