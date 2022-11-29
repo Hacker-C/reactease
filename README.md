@@ -10,6 +10,35 @@
   - Valueless Attributify Mode
 - 😋 ESLint with @antfu/eslint-config, single quotes, no semi, no comma-dangle.
 
+
+### Three modes of Unocss style
+
+1. Class Property Mode
+
+```tsx
+<h2 className='px-2 bg-gray-2 text-2xl text-primary font-bold'>
+  Class Property Mode
+</h2>
+```
+
+2. Attributify Mode
+
+```tsx
+<h2 p="x-2" bg="gray-2" text="2xl primary" font="bold">
+  Attributify Mode
+</h2>
+```
+
+3. Valueless Attributify Mode
+
+```tsx
+<h2 px-2 bg-gray-2 text-2xl text-primary font-bold>
+  Valueless Attributify Mode
+</h2>
+```
+
+More: [@unocss/preset-attributify](https://www.npmjs.com/package/@unocss/preset-attributify)
+
 ## Install
 
 ```
