@@ -1,22 +1,40 @@
-function App() {
-  return (
-    <div text-center mx-20>
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import React from 'react'
+import type { RouteType } from '@/routes'
+import { routes } from '@/routes'
+import TheFooter from '@/components/footer'
 
-      <h1 text-primary text-3xl py-5>React Starter Template</h1>
-
-      <h2 className='px-2 bg-gray-2 text-2xl text-primary font-bold'>
-        Class Property Mode
-      </h2>
-
-      <h2 p="x-2" bg="gray-2" text="2xl primary" font="bold">
-        Attributify Mode
-      </h2>
-
-      <h2 px-2 bg-gray-2 text-2xl text-primary font-bold>
-        Valueless Attributify Mode
-      </h2>
-    </div>
-  )
+interface Props {
+  route: RouteType
 }
 
-export default App
+const DomTitle: React.FC<Props> = (props: Props) => {
+  const { route } = props
+  if (route?.meta?.title)
+    document.title = `${route?.meta?.title} | Reactease`
+  return <route.element />
+}
+
+export default function App() {
+  return (
+    <>
+    <Router>
+      <Routes>
+        {
+          routes.map((route) => {
+            return (
+              <Route
+                path={route.path}
+                key={route.path}
+                element={<DomTitle route={route}/>}
+              />
+            )
+          })
+        }
+      </Routes>
+      <TheFooter></TheFooter>
+    </Router>
+    </>
+
+  )
+}
