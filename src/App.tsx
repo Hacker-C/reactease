@@ -35,6 +35,5 @@ export default function App() {
       <TheFooter></TheFooter>
     </Router>
     </>
-
   )
 }
