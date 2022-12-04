@@ -3,12 +3,18 @@
 ## Features
 
 - ⚡ Vite, pnpm
-- 🚀 React + TypeScript
+- 🚀 React
+- ⚓ React Router
 - 🎨 Unocss
   - Class Property Mode
   - Attributify Mode
   - Valueless Attributify Mode
+- 💪 TypeScript, of course(fully typed)
+- 🎈 Iconify for icons
+  - [Icon sets](https://icon-sets.iconify.design/)
 - 😋 ESLint with @antfu/eslint-config, single quotes, no semi, no comma-dangle.
+- 📁 File path alias
+  - `'@/*'` -> `src/*`
 
 
 ### Three modes of Unocss style
