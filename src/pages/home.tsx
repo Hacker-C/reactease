@@ -10,9 +10,10 @@ function Home() {
       <div h-20 mt-10>
         <Icon icon="carbon:campsite" width='80' className='pos-center animate-pulse text-primary'/>
       </div>
-      <h1 text="lg gray-700">React Starter</h1>
+      <h1 text="lg gray-700">Reactease</h1>
       <p font-sans text="gray-500 sm" mb-10>
-        <i>React + TS + Unocss Templete Starter</i>
+        <i>「"Create react project with ease"」</i>
+        <i block mt-2>React + TS + Unocss Starter Templete</i>
       </p>
       <input
         type="text" placeholder="What's your name?"
