@@ -49,8 +49,13 @@ More: [@unocss/preset-attributify](https://www.npmjs.com/package/@unocss/preset-
 
 ## Install
 
+Copy the command below and run it.
 ```
-npx degit hacker-c/react-starter my-react-app
+npx degit --mode=git hacker-c/reactease my-react-app
+```
+
+Then install the deps.
+```
 cd my-react-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
