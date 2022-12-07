@@ -5,7 +5,7 @@ const items = [
   { path: '/', icon: 'carbon:campsite' },
   { path: '/about', icon: 'material-symbols:info-outline' },
   { path: '/404', icon: 'tabler:error-404' },
-  { path: 'https://github.com/Hacker-C/react-starter', icon: 'mdi:github' },
+  { path: 'https://github.com/Hacker-C/reactease', icon: 'mdi:github' },
   { path: 'https://beta.reactjs.org/', icon: 'mdi:react' },
   { path: 'https://github.com/unocss/unocss', icon: 'simple-icons:unocss' }
 ]
