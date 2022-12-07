@@ -28,9 +28,6 @@ export default function TheFooter() {
           })
         }
       </div>
-      <div text="center gray-600" mt-5>
-        Built with React, inspired by <a href="https://vitesse.netlify.app/" target="_blank" underline>antfu/vitesse</a>
-      </div>
     </footer>
   )
 }

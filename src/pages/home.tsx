@@ -8,7 +8,7 @@ function Home() {
   return (
     <div text-center>
       <div h-20 mt-10>
-        <Icon icon="carbon:campsite" width='80' className='pos-center animate-pulse text-primary'/>
+        <Icon icon="carbon:campsite" width='50' className='pos-center' text-gray-700/>
       </div>
       <h1 text="lg gray-700">Reactease</h1>
       <p font-sans text="gray-500 sm" mb-10>
