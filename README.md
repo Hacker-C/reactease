@@ -1,6 +1,6 @@
 # Reactease 
 
-Reactease is a react starter template with Vite, which means "Create react project with ease".
+Reactease is a react starter template with Vite, which means "Create react project with ease".(inspired by [vitesse](https://vitesse.netlify.app/))
 
 ## Features
 
