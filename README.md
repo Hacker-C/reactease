@@ -51,7 +51,7 @@ More: [@unocss/preset-attributify](https://www.npmjs.com/package/@unocss/preset-
 
 Copy the command below and run it.
 ```
-npx degit --mode=git hacker-c/reactease my-react-app
+npx degit hacker-c/reactease my-react-app
 ```
 
 Then install the deps.
