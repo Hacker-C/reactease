@@ -60,6 +60,9 @@ cd my-react-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
+> **Note**
+> Remember to change `terminal.integrated.defaultProfile.windows` to yours in ".vscode/settings.json".
+
 ## Usage
 
 ### Development
