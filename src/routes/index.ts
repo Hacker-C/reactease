@@ -1,8 +1,9 @@
 import type React from 'react'
+import { lazy } from 'react'
 import Home from '~/pages/home'
 import Hi from '~/pages/hi'
-import About from '~/pages/about'
-import ErrorPage from '~/pages/error-page'
+const About = lazy(() => import('~/pages/about'))
+const ErrorPage = lazy(() => import('~/pages/error-page'))
 
 export interface RouteType {
   path: string
