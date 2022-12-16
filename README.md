@@ -5,13 +5,14 @@ Reactease is a react starter template with Vite, which means "Create react proje
 ## Features
 
 - ⚡ Vite, pnpm
-- 🚀 React
+- 🔥 React
 - ⚓ React Router
 - 🎨 Unocss
   - Class Property Mode
   - Attributify Mode
   - Valueless Attributify Mode
 - 💪 TypeScript, of course(fully typed)
+- 🚀 Using [vite-plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), faster.
 - 🎈 Iconify for icons
   - [Icon sets](https://icon-sets.iconify.design/)
 - 😋 ESLint with @antfu/eslint-config, single quotes, no semi, no comma-dangle.
