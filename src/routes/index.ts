@@ -1,8 +1,8 @@
 import type React from 'react'
-import Home from '@/pages/home'
-import Hi from '@/pages/hi'
-import About from '@/pages/about'
-import ErrorPage from '@/pages/error-page'
+import Home from '~/pages/home'
+import Hi from '~/pages/hi'
+import About from '~/pages/about'
+import ErrorPage from '~/pages/error-page'
 
 export interface RouteType {
   path: string

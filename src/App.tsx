@@ -1,8 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import React from 'react'
-import type { RouteType } from '@/routes'
-import { routes } from '@/routes'
-import TheFooter from '@/components/footer'
+import type { RouteType } from '~/routes'
+import { routes } from '~/routes'
+import TheFooter from '~/components/footer'
 
 interface Props {
   route: RouteType

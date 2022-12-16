@@ -16,7 +16,7 @@ Reactease is a react starter template with Vite, which means "Create react proje
   - [Icon sets](https://icon-sets.iconify.design/)
 - 😋 ESLint with @antfu/eslint-config, single quotes, no semi, no comma-dangle.
 - 📁 File path alias
-  - `'@/*'` -> `src/*`
+  - `'~/*'` -> `src/*`
 
 
 ### Three modes of Unocss style
