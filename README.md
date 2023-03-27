@@ -8,45 +8,39 @@ Reactease is a react starter template with Vite, which means "Create react proje
 - 🔥 React
 - ⚓ React Router
 - 🎨 Unocss
-  - Class Property Mode
-  - Attributify Mode
-  - Valueless Attributify Mode
-- 💪 TypeScript, of course(fully typed)
+- 🎈 Iconify for icons（[Icon sets](https://icon-sets.iconify.design))
+- 💪 TypeScript, of course
 - 🚀 Using [vite-plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), faster.
-- 🎈 Iconify for icons
-  - [Icon sets](https://icon-sets.iconify.design/)
-- 😋 ESLint with @antfu/eslint-config, single quotes, no semi, no comma-dangle.
-- 📁 File path alias
-  - `'~/*'` -> `src/*`
+- 😋 ESLint with [@antfu/eslint-config]()
+- 📁 File path alias (`'~/*'` -> `src/*`)
 
+### About unocss.config.ts
 
-### Three modes of Unocss style
+You can use many atomic css features by using the [UnoCSS Packages](https://github.com/unocss/unocss/tree/main/packages)
 
-1. Class Property Mode
-
-    ```tsx
-    <h2 className='px-2 bg-gray-2 text-2xl text-primary font-bold'>
-      Class Property Mode
-    </h2>
-    ```
-
-2. Attributify Mode
-
-    ```tsx
-    <h2 p="x-2" bg="gray-2" text="2xl primary" font="bold">
+1. presetAttributify
+    ```html
+    <h2
+      m="x-2 y-1"
+      bg="gray-400 hover:gray-200"
+      text="2xl primary"
+      font="base bold"
+    >
       Attributify Mode
     </h2>
     ```
 
-3. Valueless Attributify Mode
-
-    ```tsx
-    <h2 px-2 bg-gray-2 text-2xl text-primary font-bold>
-      Valueless Attributify Mode
-    </h2>
+2. presetWind
+    Integrated some features of TaildwindCSS and WindiCSS.
+    ```html
+    <!-- lt-sm means screen less then 640px -->
+    <div className='lt-sm:bg-red-200 at-sm:gray-400 sm:bg-blue-200'></div>
     ```
 
-More: [@unocss/preset-attributify](https://www.npmjs.com/package/@unocss/preset-attributify)
+3. transformerVariantGroup
+    ```html
+    <div class="hover:(bg-gray-400 font-medium) font-(light mono)"/>
+    ```
 
 ## Install
 
@@ -60,9 +54,6 @@ Then install the deps.
 cd my-react-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
-
-> **Note**
-> Remember to change `terminal.integrated.defaultProfile.windows` to yours in ".vscode/settings.json".
 
 ## Usage
 
