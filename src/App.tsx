@@ -13,7 +13,7 @@ const DomTitle: React.FC<Props> = (props: Props) => {
   if (route?.meta?.title)
     document.title = `${route?.meta?.title} | Reactease`
   return (
-    <Suspense fallback={<h1 text-center>Loading...</h1>}>
+    <Suspense fallback={<h1 text='center'>Loading...</h1>}>
       <route.element />
     </Suspense>
   )

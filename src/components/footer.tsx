@@ -12,17 +12,17 @@ const items = [
 
 export default function TheFooter() {
   return (
-    <footer mt-5>
-      <div flex justify-center>
+    <footer className='mt-5'>
+      <div className='flex-center'>
         {
           items.map((item) => {
             return (
               item.path.includes('http')
                 ? <a href={item.path} key={item.path} target="_blank" m="x-2">
-                    <Icon icon={item.icon} width='25' text-gray-500 hover:text-primary/>
+                    <Icon icon={item.icon} width='25' className='text-gray-500 hover:text-primary' />
                   </a>
                 : <Link to={item.path} key={item.path} m="x-2">
-                    <Icon icon={item.icon} width='25' text-gray-500 hover:text-primary/>
+                    <Icon icon={item.icon} width='25' className='text-gray-500 hover:text-primary' />
                   </Link>
             )
           })

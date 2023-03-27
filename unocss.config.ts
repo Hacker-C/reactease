@@ -1,20 +1,16 @@
 import { defineConfig, presetAttributify, presetUno, presetWebFonts } from 'unocss'
-import transformerAttributifyJsx from '@unocss/transformer-attributify-jsx'
 
 export default defineConfig({
   presets: [
     presetAttributify(),
     presetUno(),
     presetWebFonts({
-      provider: 'bunny',
+      provider: 'none',
       fonts: {
         sans: 'Roboto',
         mono: ['Fira Code', 'Fira Mono:400,700'],
       }
     })
-  ],
-  transformers: [
-    transformerAttributifyJsx()
   ],
   theme: {
     colors: {
