@@ -6,6 +6,8 @@
     "@typescript-eslint/comma-dangle": ["error", "never"],
     "@typescript-eslint/brace-style": "off",
     "antfu/if-newline": "off",
-    "curly": "off"
+    "curly": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "warn"
   }
 }

@@ -3,8 +3,8 @@ import {
   presetAttributify,
   presetUno,
   presetWebFonts,
-  transformerVariantGroup,
-  presetWind
+  presetWind,
+  transformerVariantGroup
 } from 'unocss'
 
 export default defineConfig({
@@ -17,11 +17,19 @@ export default defineConfig({
       fonts: {
         times: ['Times']
       }
-    }),
+    })
   ],
   theme: {
     colors: {
       primary: '#7eebff'
+    },
+    breakpoints: {
+      xs: '320px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1536px'
     }
   },
   transformers: [
