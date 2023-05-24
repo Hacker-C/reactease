@@ -1,10 +1,13 @@
 import { Icon } from '@iconify/react'
 import { useNavigate } from 'react-router-dom'
+import { useSnapshot } from 'valtio'
 import { useState } from 'react'
+import { userSore } from '~/store'
 
 function Home() {
   const navigate = useNavigate()
-  const [name, setName] = useState('')
+  const { uname, update } = useSnapshot(userSore)
+  const [name, setName] = useState(uname)
   return (
     <div text='center'>
       <div className='h-20 pt-10'>
@@ -23,15 +26,16 @@ function Home() {
         className='w-70 px-3 py-2 rounded outline-none'
         text='center dark:white'
         bg='dark:gray-700'
-        value={name}
+        value={name ?? ''}
         onInput={e => setName(e.currentTarget.value)}
       />
       <div>
         <button
           className='btn-primary bg-gray-500 hover:bg-primary disabled:bg-gray-400 disabled:hover:bg-primary'
           p="y-1 x-4"
-          disabled={name === ''}
+          disabled={!name}
           onClick={() => {
+            update(name as string)
             navigate(`/hi/${name}`, {
               state: { name }
             })

@@ -3,12 +3,12 @@ import { Link, useLocation } from 'react-router-dom'
 import { useDark } from '~/hooks/useDark'
 
 const items = [
-  { path: '/', icon: 'carbon:campsite' },
-  { path: '/about', icon: 'material-symbols:info-outline' },
-  { path: '/404', icon: 'tabler:error-404' },
-  { path: 'https://github.com/Hacker-C/reactease', icon: 'mdi:github' },
-  { path: 'https://beta.reactjs.org/', icon: 'mdi:react' },
-  { path: 'https://github.com/unocss/unocss', icon: 'simple-icons:unocss' }
+  { name: 'Home', path: '/', icon: 'carbon:campsite' },
+  { name: 'About', path: '/about', icon: 'material-symbols:info-outline' },
+  { name: '404', path: '/404', icon: 'tabler:error-404' },
+  { name: 'Github', path: 'https://github.com/Hacker-C/reactease', icon: 'mdi:github' },
+  { name: 'Valtio', path: 'https://valtio.pmnd.rs', icon: 'mdi:alpha-v-box' },
+  { name: 'UnoCSS', path: 'https://github.com/unocss/unocss', icon: 'simple-icons:unocss' }
 ]
 
 export default function TheFooter() {
@@ -17,11 +17,12 @@ export default function TheFooter() {
   return (
     <footer className='mt-5'>
       <div className='flex-center'>
-        {items.map(({ path, icon }) => <Link
+        {items.map(({ path, icon, name }) => <Link
           to={path}
           key={path}
           target={path.includes('http') ? '_blank' : '_self'}
           m="x2"
+          title={name}
         >
           <Icon
             icon={icon}

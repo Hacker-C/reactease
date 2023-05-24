@@ -15,7 +15,8 @@
     "@unocss/reset": "^0.51.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1"
+    "react-router-dom": "^6.11.1",
+    "valtio": "^1.10.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",

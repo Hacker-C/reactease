@@ -7,7 +7,8 @@ Reactease is a react starter template with Vite, which means "Create react proje
 - ⚡ Vite, pnpm
 - 🔥 React
 - ⚓ React Router
-- 🎨 Unocss
+- 🎨 [Unocss](https://unocss.dev)
+- 🏠 [Valtio](https://valtio.pmnd.rs/), A user-friendly and concise state management using proxy
 - 🎈 Iconify for icons（[Icon sets](https://icon-sets.iconify.design))
 - 💪 TypeScript, of course
 - 🚀 Using [vite-plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), faster.

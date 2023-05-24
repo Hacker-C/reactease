@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import { LocalStorageUtil } from '~/utils'
 
 export function useDark() {
   // 初始化
-  const dark = localStorage.getItem('dark')
-  const [isDark, setIsDark] = useState(dark === 'true')
+  const dark = LocalStorageUtil.getItem<boolean>('dark')
+  const [isDark, setIsDark] = useState(dark)
 
   if (isDark) {
     document.documentElement.classList.add('dark')
@@ -11,7 +12,7 @@ export function useDark() {
 
   const setDark = (value: boolean) => {
     setIsDark(value)
-    localStorage.setItem('dark', String(value))
+    LocalStorageUtil.setItem('dark', value)
     document.documentElement.classList.toggle('dark', value)
   }
 
