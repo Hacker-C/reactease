@@ -8,12 +8,22 @@ interface Props {
   route: RouteType
 }
 
+function Loading() {
+  return (
+    <div className='h-100vh flex-center'>
+      <h1 text='lg'>
+        Loading...
+      </h1>
+    </div>
+  )
+}
+
 const DomTitle: React.FC<Props> = (props: Props) => {
   const { route } = props
   if (route?.meta?.title)
     document.title = `${route?.meta?.title} | Reactease`
   return (
-    <Suspense fallback={<h1 text='center'>Loading...</h1>}>
+    <Suspense fallback={<Loading />}>
       <route.element />
     </Suspense>
   )
