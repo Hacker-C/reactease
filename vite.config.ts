@@ -6,8 +6,8 @@ import unocss from 'unocss/vite'
 
 export default defineConfig({
   plugins: [
-    unocss(),
-    react()
+    react(),
+    unocss()
   ],
   server: {
     port: 3333
@@ -15,7 +15,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': resolve(__dirname, 'src')
-    },
-    extensions: ['.js', '.json', 'ts', 'tsx'] // 使用路径别名时想要省略的后缀名
+    }
   }
 })
