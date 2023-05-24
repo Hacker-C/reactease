@@ -21,23 +21,23 @@ const DomTitle: React.FC<Props> = (props: Props) => {
 
 export default function App() {
   return (
-    <>
-    <Router>
-      <Routes>
-        {
-          routes.map((route) => {
-            return (
-              <Route
-                path={route.path}
-                key={route.path}
-                element={<DomTitle route={route}/>}
-              />
-            )
-          })
-        }
-      </Routes>
-      <TheFooter></TheFooter>
-    </Router>
-    </>
+    <div className='dark:bg-black min-h-0px'>
+      <Router>
+        <Routes>
+          {
+            routes.map((route) => {
+              return (
+                <Route
+                  path={route.path}
+                  key={route.path}
+                  element={<DomTitle route={route} />}
+                />
+              )
+            })
+          }
+        </Routes>
+        <TheFooter></TheFooter>
+      </Router>
+    </div>
   )
 }

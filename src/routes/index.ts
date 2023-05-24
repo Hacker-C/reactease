@@ -2,6 +2,7 @@ import type React from 'react'
 import { lazy } from 'react'
 import Home from '~/pages/home'
 import Hi from '~/pages/hi'
+
 const About = lazy(() => import('~/pages/about'))
 const ErrorPage = lazy(() => import('~/pages/error-page'))
 
@@ -30,7 +31,10 @@ const routes: RouteType[] = [
   },
   {
     path: '/about',
-    element: About
+    element: About,
+    meta: {
+      title: 'About'
+    }
   },
   {
     path: '*',
@@ -42,4 +46,3 @@ const routes: RouteType[] = [
 ]
 
 export { routes }
-

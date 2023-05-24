@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useDark } from '~/hooks/useDark'
 
 const items = [
   { path: '/', icon: 'carbon:campsite' },
@@ -11,22 +12,34 @@ const items = [
 ]
 
 export default function TheFooter() {
+  const loc = useLocation()
+  const { toggle, isDark } = useDark()
   return (
     <footer className='mt-5'>
       <div className='flex-center'>
-        {
-          items.map((item) => {
-            return (
-              item.path.includes('http')
-                ? <a href={item.path} key={item.path} target="_blank" m="x-2">
-                    <Icon icon={item.icon} width='25' className='text-gray-500 hover:text-primary' />
-                  </a>
-                : <Link to={item.path} key={item.path} m="x-2">
-                    <Icon icon={item.icon} width='25' className='text-gray-500 hover:text-primary' />
-                  </Link>
-            )
-          })
-        }
+        {items.map(({ path, icon }) => <Link
+          to={path}
+          key={path}
+          target={path.includes('http') ? '_blank' : '_self'}
+          m="x2"
+        >
+          <Icon
+            icon={icon}
+            width={path.includes('unocss') ? 22 : 25}
+            className='text-gray-500 dark:text-white hover:text-primary'
+            style={{
+              color: loc.pathname === path ? '#7eebff' : ''
+            }}
+          />
+        </Link>)}
+        <Icon
+          icon={isDark ? 'ph:sun-bold' : 'ph:moon-bold'}
+          width={25}
+          className='text-gray-500 dark:text-white cursor-pointer mx2'
+          onClick={() => {
+            toggle()
+          }}
+        />
       </div>
     </footer>
   )
