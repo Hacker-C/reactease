@@ -12,8 +12,8 @@ const techs = [
 
 export default function About() {
   return (
-    <div className='mx-30% sm:mx-30% font-sans text-gray-800'>
-      <div className='h-20 pt-10'>
+    <div className='mx-30% sm:mx-30% font-sans text-gray-800 pt20'>
+      <div h-20>
         <Icon icon='material-symbols:info-outline' width='50' className='pos-center text-gray-700 dark:text-white' />
       </div>
       <h1 text="xl center dark:white" font="bold sans">About</h1>
